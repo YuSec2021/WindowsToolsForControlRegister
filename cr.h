@@ -15,6 +15,10 @@
 #define CD 0x4000000 // Bit 30
 #define PG 0x8000000 // Bit 31
 
+//  CR3
+#define PWT 0x8
+#define PCD 0x10
+
 // CR4
 // Bit 0 - Bit 31
 #define VME 0x1 // Bit 0
@@ -37,3 +41,7 @@
 #define SMEP 0x100000 // Bit 20
 #define SMAP 0x200000 // Bit 21
 #define PKE 0x400000 // Bit 22
+
+VOID CR0(DWORD cr0);
+VOID CR3(DWORD cr3);
+VOID CR4(DWORD cr4);

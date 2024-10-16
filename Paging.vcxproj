@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cr.cpp" />
     <ClCompile Include="paging.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
