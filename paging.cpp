@@ -17,7 +17,7 @@ int main() {
 	while (true) {
 		printf("Input LinearAddress: ");
 		scanf("%x", &linearaddress);
-		analysisLinearAddress(0, linearaddress);
+		analysisLinearAddress(1, 0, linearaddress);
 	}
 
 
