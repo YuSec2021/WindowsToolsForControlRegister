@@ -14,10 +14,13 @@ int main() {
 	//CR4(_cr4);
 	
 	DWORD linearaddress = 0;
+	DWORD mode = 0;
 	while (true) {
+		printf("1 - PAE, 0 - NOPAE\nlinear Address Mode:  \n");
+		scanf("%x", &mode);
 		printf("Input LinearAddress: ");
 		scanf("%x", &linearaddress);
-		analysisLinearAddress(1, 0, linearaddress);
+		analysisLinearAddress(mode, PAGE_4KB, linearaddress);
 	}
 
 
